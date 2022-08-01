@@ -1,7 +1,7 @@
-class Casino:
+class Lottery:
 
-    def lottery(self, players_money):
-        self.players_money = players_money
+    def __init__(self):
+        self.players_money = 1000
         while True:
             print(f'Деньги игрока:{self.players_money}')
             print(f'Сумма билета: 20')
