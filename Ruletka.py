@@ -9,8 +9,8 @@ class Ruletka:
 
     def start(self):
         self.bet = int(input(f'Ваш баланс: {self.players_moneyr}.\nВаша ставка: '))
-        integers = 16
-        colours = 'Red'
+        integers = random.choice([i for i in range(0, 35)])
+        colours = random.choice(['Red', 'Black'])
         if self.players_moneyr >= int(self.bet) >= 50:
             if str(self.choice) == colours:
                 self.players_moneyr += (int(self.bet) * 2)

@@ -3,6 +3,7 @@ class Lottery:
     def __init__(self):
         self.players_money = 1000
         while True:
+
             print(f'Деньги игрока:{self.players_money}')
             print(f'Сумма билета: 20')
             print('Билеты от 00000 до 00030')
