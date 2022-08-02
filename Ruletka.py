@@ -3,11 +3,12 @@ import random
 
 class Ruletka:
 
-    def __init__(self):
-        self.players_moneyr = 1000
-        self.choice = input('Ваш выбор(Red, Black) или (0 до 36): ')
+    def __init__(self, player):
+        self.players_moneyr = player
+
 
     def start(self):
+        self.choice = input('Ваш выбор(Red, Black) или (0 до 36): ')
         self.bet = int(input(f'Ваш баланс: {self.players_moneyr}.\nВаша ставка: '))
         integers = random.choice([i for i in range(0, 35)])
         colours = random.choice(['Red', 'Black'])
