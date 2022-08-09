@@ -7,7 +7,7 @@ while True:
     if game == 'Ruletka':
         rul = Ruletka(1000)
         while True:
-            print(rul.start())
+            rul.start()
             if rul.players_moneyr == 0:
                 print('Вы проиграли все деньги. Не зря ХАРАМ')
                 break
